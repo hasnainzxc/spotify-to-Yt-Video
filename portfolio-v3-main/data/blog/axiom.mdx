@@ -1,0 +1,87 @@
+---
+title: 'What is Checkm8? Did Axi0mX Really Checkmated Apple?'
+date: '2021-04-02'
+tags: ['iOS', 'exploit', 'jailbreak', 'Apple', 'security']
+draft: false
+summary: 'A deep dive into the Checkm8 exploit and its implications for iOS devices.'
+images:
+  [
+    'https://miro.medium.com/v2/resize:fit:720/format:webp/0*wUnxaa8b93pTJSwJ.jpg',
+  ]
+authors: ['default']
+---
+
+So a hacker has revealed an iOS exploit that’s unpatchable and could impact millions of iOS devices. Sounds dramatic and significant right? That’s because it is. This is possibly the biggest news in iOS jailbreak community history in years — tweeted by the dude who made this exploit. But before we dissect this bad boy, let me just get the non-tech readers up to speed.
+
+### What is an Exploit?
+
+An exploit is any attack that takes advantage of vulnerabilities in applications, networks, operating systems, or hardware. Exploits usually take the form of software or code that aims to take control of computers or steal network data. In much simpler terms, to use someone or something to achieve one’s own purposes like pretending to befriend an intelligent student in class for the sole purpose of copying his homework.
+
+### Now what is Checkm8?
+
+![Checkm8 Image](https://miro.medium.com/max/700/1*8aGg5zCRqE0MrrnG4Tw8Hg.jpg)
+
+An Apple silicon hacker and Bootrom exploit philanthropist by the name axi0mX created this Checkm8 for which Apple has no way of patching the flaw. Its code enables hundreds of millions of iOS devices to be jailbroken. As the name suggests, jailbreaking gives people the ability to break iOS devices and strip them of restrictions Apple has placed on them.
+
+Almost all previous tool’s exploits allow the iOS version to jailbreak. But this Checkm8 exploit is more special than others because it is unpatchable. Here’s why!
+
+### Why is it Unpatchable?
+
+In the past, whenever a new exploit would emerge in the market, it would be swiftly patched by Apple. A recent example, in August, Apple released an iOS 12.4 update which unpatched a jailbreak vulnerability which took advantage of the ‘SockPuppet’ flaw, and was swiftly patched by a red-faced Apple. While embarrassing, that mistake pales in comparison to the recent vulnerability of Checkm8.
+
+So when we say that this exploit is unpatchable that’s because it isn’t, it uses an exploit which targets a security hole in the Apple device’s ‘bootrom’, which is essentially the first bit of code that runs when an iOS device is turned on.
+
+Hence it is an unpatchable & unblockable exploit to make permanent jailbreak for almost all iPhones and iPads. This bootrom Checkm8 exploit impacts iPhone 4S to iPhone X and many iPads.
+
+Other than the jailbreak possibility, it can downgrade or upgrade the iOS version using this exploit without saving SHSH blob. Here you can find more about SHSH blobs.
+
+### Is My Phone Compatible with Checkm8?
+
+There are a lot of devices that can run this exploit. Infact, there are very few exceptions and the list of incompatible devices is becoming shorter and shorter with new updates.
+
+The devices that are vulnerable to checkm8 include the following:
+
+- iPhones from the 4s up to the iPhone X
+- iPads from the 2 up to the 7th generation
+- iPad Mini 2 and 3
+- iPad Air 1st and 2nd generation
+- iPad Pro 10.5-inch and 12.9-inch 2nd generation
+- Apple Watch Series 1, Series 2, and Series 3
+- Apple TV 3rd generation and 4k
+- iPod Touch 5th generation to 7th generation
+
+### What are the Possible Applications of this Exploit?
+
+Besides the obvious threat of criminal activity, there are actually some beneficial possible uses of checkm8.
+
+For security researchers, this is a huge boon, which should help them analyze any version of iOS that will run on an iPhone X or older. Since iOS research really can’t be done on a device that hasn’t had security restrictions lifted somehow, this will likely become one of the most important tools in researchers’ toolkits. This can benefit iOS users, as it can enable researchers to locate issues and report them to Apple.
+
+For users, the most important application of this exploit is obviously the jailbreak, which gives the user adequate control to mess around with their phone.
+
+Some of the important advantages and features of jailbreaking are listed below:
+
+- Installation and use of third-party apps not available in the App Store
+- Customization of the appearance (icons, boot animation, etc.)
+- Access to hidden iOS system files
+- Make performance tweaks that are otherwise not possible or too difficult
+- Enable file sharing between iOS and Android devices
+- Overcome the limitation of Bluetooth connections to image transfer only
+- Enable Wi-Fi tethering even if it’s not supported by the carrier
+
+### How to Run Checkm8?
+
+1. First, you need to download the exploit from [here](https://github.com/axi0mX/ipwndfu).
+2. Extract the ZIP file.
+3. Open Terminal.
+4. Drag and drop the extracted folder into the Terminal.
+5. Type “cd ipwndfu_public” and press Enter.
+6. Connect the iPhone, iPad, or iPod to the Mac.
+7. Put the device in DFU mode. For iPhone 6s and older, you need to press and hold POWER + Home until the screen is off, wait a few seconds, release the POWER button but keep pressing the HOME button for another 10 seconds. the screen should remain black. For iPhone 7 and newer, you need to press and hold POWER + VOLUME DOWN until the screen is off, wait a few seconds, release the POWER button and keep pressing the VOLUME DOWN button for another 10 seconds. The screen should remain black. Do not disconnect the device.
+8. In the Terminal, run “./ipwndfu -p”. If you get an error, run it again until you get a message telling you the iDevice is now in Pwned DFU mode.
+9. The Pwned DFU mode will remain until the phone reboots. You should not see anything on the screen (black screen).
+
+### Bottom Line
+
+So to answer the question, yes he did checkmated Apple, even an independent security consultant named Robin Wood said in an interview and I quote ”The most significant thing about Checkm8 is that it can’t be fixed with a software patch which is the way most vulnerabilities get fixed as it is in software, which is hard-coded on the device,”.
+
+So there you go! That was a short and sugary clarification of this new scapegrace that is taking the iOS world by storm. If you are still curious to know more about checkm8 and checkra1n (which I didn’t cover in this article), you can visit here and read more about it.
